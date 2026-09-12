@@ -1,62 +1,71 @@
-# C# with ASP.NET Core 🚀
+# ⚡ electronic-charge
 
-## 📚 Content
+A **programmable electronic load** project using Arduino, with current control and variable load simulation for power supplies. Ideal for lab testing with electronic components and software simulations.
 
-- ✅ Web API with ASP.NET Core
-- ✅ **CRUD**: create, view, edit, and delete data
-- ✅ Data validation with annotations and custom classes
-- ✅ Effective error handling with **Middlewares**
-- ✅ Database integration using **Entity Framework Core**
-- ✅ Best practices for project organization and scalability
+---
 
-## 🛠 Technologies Used
+## 📌 Description
 
-- [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
-- [.NET 6 or higher](https://dotnet.microsoft.com/)
-- [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/)
-- [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
-- [SQL Server or SQLite](https://www.sqlite.org/index.html)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/)
-- Swagger (OpenAPI) for documentation
+This project implements a microcontroller-controlled electronic load, capable of simulating current consumption in a controlled way.
+The application was developed with:
 
-### ✅ Using Visual Studio 2022
+- **Arduino UNO**
+- **Simulation in Proteus 8.5**
+- **Arduino IDE for programming in C++**
 
-## 🚀 How to Run the Project
+The embedded logic allows the load to be dynamically regulated according to the parameters defined in the code.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/curso-csharp-api.git
-   cd curso-csharp-api
-   ```
+---
 
-2. **Open the solution file in Visual Studio**:
-   ```bash
-   File: ProjectClientHub.API.sln
-   ```
+## 🔧 Components and Tools
 
-3. **Set the startup project**:
-   ```bash
-   Right-click on ProjectClientHub.API > Set as Startup Project
-   ```
+- Arduino IDE (latest version)
+- Proteus 8.5 Professional
+- N-channel MOSFET (IRFZ44 or similar)
+- Power resistor (for real load)
+- Current sensor (optional)
+- Test power supply
 
-4. **Run the application**:
-   ```bash
-   Press F5 or click Start Debugging
-   ```
+---
 
-5. **The application will be available via Swagger**:
-   ```bash
-   https://localhost:5001/swagger
-   ```
+## 🗂️ Project Files
 
-## 📦 Project Structure
+- `carga-eletronica-FINALIZADO_arduino.ino` → Source code in C++ (Arduino)
+- `carga eletronica.pdsprj.zip` → Proteus project for simulation
 
-```bash
-📁 ProjectClientHub.API
- ┣ 📂 Controllers
- ┣ 📂 Models
- ┣ 📂 UseCases
- ┣ 📂 Validators
- ┣ 📄 Program.cs
- ┗ 📄 Startup.cs
-```
+---
+
+## 🚀 How to Use
+
+1. Open the `.ino` file in the **Arduino IDE**
+2. Upload the code to an Arduino Uno
+3. Connect the components according to the simulated circuit
+4. Use the serial monitor or a digital input to change the load current
+5. Simulate the circuit in Proteus if you want to test it before building it physically
+
+---
+
+## 💡 Possible Improvements
+
+- LCD interface for current adjustment
+- Control via potentiometer or encoder
+- Real-time voltage and current measurement
+- Temperature limit with sensor (NTC)
+- ESP32 integration for web control
+
+---
+
+## 👨‍💻 Author
+
+**Samuel Cristian dos Santos**
+📍 Divinópolis – MG
+📧 [samuelc.01dev@gmail.com](mailto:samuelc.01dev@gmail.com)
+🔗 [linkedin.com/in/samuel-cristian](https://linkedin.com/in/samuel-cristian)
+💻 [github.com/samuelc-01](https://github.com/samuelc-01)
+
+---
+
+## 📝 License
+
+This project is licensed under the terms of the MIT license.
+See the [LICENSE](LICENSE) file for more details.
