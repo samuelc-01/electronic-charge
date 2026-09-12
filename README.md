@@ -1,72 +1,62 @@
-# ⚡ electronic-charge
+# C# with ASP.NET Core 🚀
 
-Projeto de uma **carga eletrônica programável** utilizando Arduino, com controle de corrente e simulação de carga variável para fontes de alimentação. Ideal para testes laboratoriais com componentes eletrônicos e simulações em software.
+## 📚 Content
 
----
+- ✅ Web API with ASP.NET Core
+- ✅ **CRUD**: create, view, edit, and delete data
+- ✅ Data validation with annotations and custom classes
+- ✅ Effective error handling with **Middlewares**
+- ✅ Database integration using **Entity Framework Core**
+- ✅ Best practices for project organization and scalability
 
-## 📌 Descrição
+## 🛠 Technologies Used
 
-Este projeto implementa uma carga eletrônica controlada por microcontrolador, capaz de simular o consumo de corrente de forma controlada.  
-A aplicação foi desenvolvida com:
+- [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
+- [.NET 6 or higher](https://dotnet.microsoft.com/)
+- [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/)
+- [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
+- [SQL Server or SQLite](https://www.sqlite.org/index.html)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/)
+- Swagger (OpenAPI) for documentation
 
-- **Arduino UNO**
-- **Simulação em Proteus 8.5**
-- **IDE Arduino para programação em C++**
+### ✅ Using Visual Studio 2022
 
-A lógica embarcada permite regular dinamicamente a carga de acordo com os parâmetros definidos no código.
+## 🚀 How to Run the Project
 
----
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/curso-csharp-api.git
+   cd curso-csharp-api
+   ```
 
-## 🔧 Componentes e Ferramentas
+2. **Open the solution file in Visual Studio**:
+   ```bash
+   File: ProjectClientHub.API.sln
+   ```
 
-- Arduino IDE (versão mais recente)
-- Proteus 8.5 Professional
-- MOSFET canal N (IRFZ44 ou similar)
-- Resistor de potência (para carga real)
-- Sensor de corrente (opcional)
-- Fonte de alimentação de teste
+3. **Set the startup project**:
+   ```bash
+   Right-click on ProjectClientHub.API > Set as Startup Project
+   ```
 
----
+4. **Run the application**:
+   ```bash
+   Press F5 or click Start Debugging
+   ```
 
-## 🗂️ Arquivos do Projeto
+5. **The application will be available via Swagger**:
+   ```bash
+   https://localhost:5001/swagger
+   ```
 
-- `carga-eletronica-FINALIZADO_arduino.ino` → Código fonte em C++ (Arduino)
-- `carga eletronica.pdsprj.zip` → Projeto do Proteus para simulação
+## 📦 Project Structure
 
----
-
-## 🚀 Como usar
-
-1. Abra o arquivo `.ino` na **IDE do Arduino**
-2. Carregue o código em um Arduino Uno
-3. Conecte os componentes conforme o circuito simulado
-4. Use o monitor serial ou entrada digital para alterar a corrente de carga
-5. Simule o circuito no Proteus, se quiser testar antes de montar fisicamente
-
----
----
-
-## 💡 Possíveis melhorias
-
-- Interface LCD para ajuste de corrente
-- Controle por potenciômetro ou encoder
-- Medição em tempo real de tensão e corrente
-- Limite de temperatura com sensor (NTC)
-- Integração com ESP32 para controle via Web
-
----
-
-## 👨‍💻 Autor
-
-**Samuel Cristian dos Santos**  
-📍 Divinópolis – MG  
-📧 [samuelc.01dev@gmail.com](mailto:samuelc.01dev@gmail.com)  
-🔗 [linkedin.com/in/samuel-cristian](https://linkedin.com/in/samuel-cristian)  
-💻 [github.com/samuelc-01](https://github.com/samuelc-01)
-
----
-
-## 📝 Licença
-
-Este projeto está licenciado sob os termos da licença MIT.  
-Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+```bash
+📁 ProjectClientHub.API
+ ┣ 📂 Controllers
+ ┣ 📂 Models
+ ┣ 📂 UseCases
+ ┣ 📂 Validators
+ ┣ 📄 Program.cs
+ ┗ 📄 Startup.cs
+```
